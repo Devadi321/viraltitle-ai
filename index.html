@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightMinds Academy - Premier Tuition Center</title>
+    <title>BACK BENCH GLOBAL ACADEMY - Education Support Services</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #FF6B35;
-            --secondary: #1A1A2E;
-            --accent: #16213E;
-            --light: #F7F7F7;
+            --primary: #1A1A2E;
+            --secondary: #16213E;
+            --accent: #0F3460;
+            --light: #F7F9FC;
             --white: #FFFFFF;
-            --gradient-1: linear-gradient(135deg, #FF6B35 0%, #FF8E53 100%);
-            --gradient-2: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+            --gradient-1: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+            --gradient-2: linear-gradient(135deg, #16213E 0%, #0F3460 100%);
+            --gradient-accent: linear-gradient(135deg, #1A1A2E 0%, #0F3460 100%);
         }
 
         * {
@@ -42,37 +43,37 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
         }
 
         nav.scrolled {
             padding: 0.8rem 5%;
-            box-shadow: 0 2px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 30px rgba(0,0,0,0.12);
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 1.5rem;
+            gap: 12px;
+            font-size: 1.4rem;
             font-weight: 700;
-            color: var(--secondary);
+            color: var(--primary);
         }
 
         .logo-icon {
-            width: 45px;
-            height: 45px;
+            width: 48px;
+            height: 48px;
             background: var(--gradient-1);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
 
         .nav-links {
@@ -83,7 +84,7 @@
 
         .nav-links a {
             text-decoration: none;
-            color: var(--secondary);
+            color: var(--primary);
             font-weight: 500;
             font-size: 0.95rem;
             position: relative;
@@ -102,7 +103,7 @@
         }
 
         .nav-links a:hover {
-            color: var(--primary);
+            color: var(--accent);
         }
 
         .nav-links a:hover::after {
@@ -122,7 +123,7 @@
 
         .nav-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+            box-shadow: 0 10px 30px rgba(26, 26, 46, 0.3);
         }
 
         /* Hero Section */
@@ -131,7 +132,7 @@
             padding: 8rem 5% 4rem;
             display: flex;
             align-items: center;
-            background: var(--secondary);
+            background: var(--primary);
             position: relative;
             overflow: hidden;
         }
@@ -141,8 +142,8 @@
             position: absolute;
             width: 600px;
             height: 600px;
-            background: var(--primary);
-            opacity: 0.1;
+            background: var(--accent);
+            opacity: 0.15;
             border-radius: 50%;
             top: -200px;
             right: -100px;
@@ -154,8 +155,8 @@
             position: absolute;
             width: 400px;
             height: 400px;
-            background: var(--primary);
-            opacity: 0.05;
+            background: var(--accent);
+            opacity: 0.08;
             border-radius: 50%;
             bottom: -100px;
             left: -100px;
@@ -175,10 +176,10 @@
         .hero-badge {
             display: inline-block;
             padding: 0.5rem 1.2rem;
-            background: rgba(255, 107, 53, 0.15);
-            border: 1px solid rgba(255, 107, 53, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 50px;
-            color: var(--primary);
+            color: rgba(255, 255, 255, 0.9);
             font-size: 0.85rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
@@ -187,7 +188,7 @@
 
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 4rem;
+            font-size: 3.8rem;
             color: white;
             line-height: 1.15;
             margin-bottom: 1.5rem;
@@ -195,11 +196,11 @@
         }
 
         .hero h1 span {
-            color: var(--primary);
+            color: #E8F0FE;
         }
 
         .hero p {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.75);
             font-size: 1.15rem;
             line-height: 1.8;
             margin-bottom: 2.5rem;
@@ -215,8 +216,8 @@
 
         .btn-primary {
             padding: 1rem 2.2rem;
-            background: var(--gradient-1);
-            color: white;
+            background: white;
+            color: var(--primary);
             border: none;
             border-radius: 50px;
             font-weight: 600;
@@ -230,7 +231,7 @@
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.4);
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
         }
 
         .btn-secondary {
@@ -288,7 +289,7 @@
             width: 70px;
             height: 70px;
             border-radius: 16px;
-            background: linear-gradient(135deg, #FFE5D9 0%, #FFCDB2 100%);
+            background: linear-gradient(135deg, #E8F0FE 0%, #B3D4FC 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -296,13 +297,13 @@
         }
 
         .hero-card-info h4 {
-            color: var(--secondary);
+            color: var(--primary);
             font-size: 1.1rem;
             margin-bottom: 4px;
         }
 
         .hero-card-info p {
-            color: #888;
+            color: #666;
             font-size: 0.85rem;
             margin: 0;
             padding: 0;
@@ -387,7 +388,7 @@
 
         .stat-box h2 {
             font-size: 2.5rem;
-            color: var(--secondary);
+            color: var(--primary);
             font-weight: 700;
         }
 
@@ -396,8 +397,80 @@
             font-size: 0.95rem;
         }
 
-        /* Features Section */
-        .features {
+        /* About Section */
+        .about {
+            padding: 6rem 5%;
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-content p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .about-feature i {
+            color: var(--primary);
+        }
+
+        .about-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-card {
+            background: var(--gradient-1);
+            padding: 3rem;
+            border-radius: 24px;
+            text-align: center;
+            color: white;
+            max-width: 400px;
+        }
+
+        .about-card h3 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-card p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Services Section */
+        .services {
             padding: 6rem 5%;
             background: var(--light);
         }
@@ -418,11 +491,11 @@
         .section-header h2 {
             font-family: 'Playfair Display', serif;
             font-size: 2.8rem;
-            color: var(--secondary);
+            color: var(--primary);
             margin-top: 0.8rem;
         }
 
-        .features-grid {
+        .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
@@ -430,21 +503,23 @@
             margin: 0 auto;
         }
 
-        .feature-card {
+        .service-card {
             background: white;
             padding: 2.5rem;
             border-radius: 20px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
             transition: all 0.3s;
             cursor: pointer;
+            border: 2px solid transparent;
         }
 
-        .feature-card:hover {
+        .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary);
         }
 
-        .feature-icon {
+        .service-icon {
             width: 70px;
             height: 70px;
             background: var(--gradient-1);
@@ -457,32 +532,32 @@
             margin-bottom: 1.5rem;
         }
 
-        .feature-card h3 {
-            color: var(--secondary);
+        .service-card h3 {
+            color: var(--primary);
             font-size: 1.3rem;
             margin-bottom: 1rem;
         }
 
-        .feature-card p {
+        .service-card p {
             color: #666;
             line-height: 1.7;
         }
 
-        /* Courses Section */
-        .courses {
+        /* Info Section */
+        .info-section {
             padding: 6rem 5%;
-            background: var(--secondary);
+            background: var(--primary);
         }
 
-        .courses .section-header span {
-            color: var(--primary);
+        .info-section .section-header span {
+            color: rgba(255, 255, 255, 0.7);
         }
 
-        .courses .section-header h2 {
+        .info-section .section-header h2 {
             color: white;
         }
 
-        .courses-grid {
+        .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
@@ -490,7 +565,7 @@
             margin: 0 auto;
         }
 
-        .course-card {
+        .info-card {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px;
@@ -499,19 +574,66 @@
             cursor: pointer;
         }
 
-        .course-card:hover {
+        .info-card:hover {
             background: rgba(255, 255, 255, 0.1);
             transform: translateY(-5px);
         }
 
-        .course-header {
+        .info-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 1.5rem;
         }
 
-        .course-icon {
+        .info-icon {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .info-card h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .info-card p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 6rem 5%;
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
             width: 60px;
             height: 60px;
             background: var(--gradient-1);
@@ -521,116 +643,18 @@
             justify-content: center;
             color: white;
             font-size: 1.5rem;
+            flex-shrink: 0;
         }
 
-        .course-price {
-            background: rgba(255, 107, 53, 0.2);
+        .contact-info h4 {
             color: var(--primary);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        .course-card h3 {
-            color: white;
-            font-size: 1.3rem;
-            margin-bottom: 0.8rem;
-        }
-
-        .course-card p {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-        }
-
-        .course-meta {
-            display: flex;
-            gap: 1.5rem;
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.85rem;
-        }
-
-        .course-meta span {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 6rem 5%;
-            background: white;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .testimonial-card {
-            background: var(--light);
-            padding: 2rem;
-            border-radius: 20px;
-            position: relative;
-        }
-
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 1rem;
-            right: 2rem;
-            font-size: 5rem;
-            color: var(--primary);
-            opacity: 0.2;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .testimonial-text {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .author-img {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            background: var(--gradient-1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 600;
-            font-size: 1.2rem;
-        }
-
-        .author-info h4 {
-            color: var(--secondary);
             font-size: 1rem;
+            margin-bottom: 4px;
         }
 
-        .author-info p {
-            color: #888;
-            font-size: 0.85rem;
-        }
-
-        .stars {
-            color: #FFD700;
+        .contact-info p {
+            color: #666;
             font-size: 0.9rem;
-            margin-top: 4px;
         }
 
         /* CTA Section */
@@ -647,7 +671,7 @@
             position: absolute;
             width: 300px;
             height: 300px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 50%;
             top: -100px;
             left: -100px;
@@ -658,7 +682,7 @@
             position: absolute;
             width: 200px;
             height: 200px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 50%;
             bottom: -50px;
             right: -50px;
@@ -745,7 +769,7 @@
         }
 
         .footer-links a:hover {
-            color: var(--primary);
+            color: white;
         }
 
         .footer-social {
@@ -767,7 +791,8 @@
         }
 
         .footer-social a:hover {
-            background: var(--primary);
+            background: white;
+            color: var(--primary);
             transform: translateY(-3px);
         }
 
@@ -791,7 +816,7 @@
         .menu-toggle span {
             width: 25px;
             height: 2px;
-            background: var(--secondary);
+            background: var(--primary);
             transition: all 0.3s;
         }
 
@@ -817,6 +842,10 @@
 
             .hero h1 {
                 font-size: 2.8rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -862,6 +891,10 @@
             .hero-card {
                 width: 320px;
             }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -872,13 +905,12 @@
             <div class="logo-icon">
                 <i class="fas fa-graduation-cap"></i>
             </div>
-            <span>BrightMinds</span>
+            <span>BACK BENCH</span>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button class="nav-btn">Get Started</button>
@@ -892,41 +924,41 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <span class="hero-badge">🏆 #1 Tuition Center in Town</span>
-            <h1>Unlock Your Child's <span>Full Potential</span> With Expert Tutors</h1>
-            <p>Join thousands of students achieving academic excellence with personalized attention, expert guidance, and proven learning methods. Start your journey to success today!</p>
+            <span class="hero-badge">🎓 Established Since 2021</span>
+            <h1>Your Success Starts <span>With Us</span></h1>
+            <p>BACK BENCH GLOBAL ACADEMY - Your trusted partner for academic excellence and professional tax consultation. We empower individuals and businesses to achieve their goals.</p>
             <div class="hero-buttons">
                 <button class="btn-primary">
                     <i class="fas fa-rocket"></i>
-                    Enroll Now
+                    Get Started
                 </button>
                 <button class="btn-secondary">
-                    <i class="fas fa-play-circle"></i>
-                    Watch Demo
+                    <i class="fas fa-phone"></i>
+                    Call Now
                 </button>
             </div>
         </div>
         <div class="hero-image">
             <div class="hero-card">
                 <div class="hero-card-top">
-                    <div class="hero-card-img">👩‍🏫</div>
+                    <div class="hero-card-img">🎓</div>
                     <div class="hero-card-info">
-                        <h4>Sarah Johnson</h4>
-                        <p>Top Scorer - Mathematics</p>
+                        <h4>BACK BENCH GLOBAL ACADEMY</h4>
+                        <p>Education Support Services</p>
                     </div>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <h3>98%</h3>
-                        <p>Success Rate</p>
+                        <h3>5+</h3>
+                        <p>Years Experience</p>
                     </div>
                     <div class="stat-item">
                         <h3>500+</h3>
                         <p>Students</p>
                     </div>
                     <div class="stat-item">
-                        <h3>50+</h3>
-                        <p>Expert Tutors</p>
+                        <h3>100%</h3>
+                        <p>Satisfaction</p>
                     </div>
                 </div>
                 <div class="hero-card-bottom">
@@ -936,7 +968,7 @@
                         <div class="avatar">C</div>
                         <div class="avatar">+</div>
                     </div>
-                    <p>Join 500+ happy students!</p>
+                    <p>Join 500+ satisfied clients!</p>
                 </div>
             </div>
         </div>
@@ -945,181 +977,170 @@
     <!-- Stats Section -->
     <section class="stats-section">
         <div class="stat-box">
+            <h2>5+</h2>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat-box">
             <h2>500+</h2>
-            <p>Students Enrolled</p>
+            <p>Students</p>
+        </div>
+        <div class="stat-box">
+            <h2>100%</h2>
+            <p>Satisfaction Rate</p>
         </div>
         <div class="stat-box">
             <h2>50+</h2>
-            <p>Expert Tutors</p>
-        </div>
-        <div class="stat-box">
-            <h2>98%</h2>
-            <p>Success Rate</p>
-        </div>
-        <div class="stat-box">
-            <h2>15+</h2>
-            <p>Years Experience</p>
+            <p>Business Clients</p>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="section-header">
-            <span>Why Choose Us</span>
-            <h2>Learn With Confidence</h2>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-content">
+                <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem;">About Us</span>
+                <h2>Welcome to BACK BENCH GLOBAL ACADEMY</h2>
+                <p>Since 2021, BACK BENCH GLOBAL ACADEMY has been a leading provider of education support services and professional tax consultation. We are committed to helping students achieve academic excellence and businesses navigate complex tax regulations.</p>
+                <p>Our team of experienced professionals provides personalized guidance tailored to your unique needs, ensuring the best possible outcomes for every client.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Expert Guidance</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Personalized Service</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Proven Results</span>
+                    </div>
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Trusted Partner</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="about-card">
+                    <h3>Since 2021</h3>
+                    <p>Empowering Success</p>
+                </div>
+            </div>
         </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-user-graduate"></i>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <span>Our Services</span>
+            <h2>What We Offer</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-calculator"></i>
                 </div>
-                <h3>Expert Tutors</h3>
-                <p>Our highly qualified teachers bring years of experience and proven teaching methodologies to help your child excel.</p>
+                <h3>Tax Consultation</h3>
+                <p>Professional tax planning and consultation services for individuals and businesses. We help you optimize your tax obligations while ensuring compliance with all regulations.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-laptop-code"></i>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-book-reader"></i>
                 </div>
-                <h3>Online & Offline</h3>
-                <p>Flexible learning options with both in-person classes and interactive online sessions for your convenience.</p>
+                <h3>Academic Assistance</h3>
+                <p>Comprehensive academic support including tutoring, exam preparation, and career guidance. We help students achieve their full potential in their educational journey.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">
+            <div class="service-card">
+                <div class="service-icon">
                     <i class="fas fa-chart-line"></i>
                 </div>
-                <h3>Progress Tracking</h3>
-                <p>Regular assessments and detailed progress reports to monitor your child's growth and identify areas for improvement.</p>
+                <h3>Business Advisory</h3>
+                <p>Strategic business consultation to help you grow and succeed. From startup guidance to established business optimization.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">
+            <div class="service-card">
+                <div class="service-icon">
                     <i class="fas fa-users"></i>
                 </div>
-                <h3>Small Batch Sizes</h3>
-                <p>Limited students per batch ensuring personalized attention and better understanding for every student.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-book-open"></i>
-                </div>
-                <h3>Comprehensive Material</h3>
-                <p>Access to well-structured study materials, practice papers, and interactive learning resources.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-clock"></i>
-                </div>
-                <h3>Flexible Timing</h3>
-                <p>Multiple class slots available throughout the day to fit your child's schedule and routine.</p>
+                <h3>Career Counseling</h3>
+                <p>Professional career guidance and counseling services to help you make informed decisions about your future.</p>
             </div>
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section class="courses" id="courses">
+    <!-- Info Section -->
+    <section class="info-section">
         <div class="section-header">
-            <span>Our Courses</span>
-            <h2>Choose Your Path to Success</h2>
+            <span>Why Choose Us</span>
+            <h2>Our Commitment</h2>
         </div>
-        <div class="courses-grid">
-            <div class="course-card">
-                <div class="course-header">
-                    <div class="course-icon">📐</div>
-                    <span class="course-price">$199/mo</span>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-header">
+                    <div class="info-icon">✓</div>
                 </div>
-                <h3>Mathematics</h3>
-                <p>Master algebra, geometry, calculus, and more with expert guidance and problem-solving techniques.</p>
-                <div class="course-meta">
-                    <span><i class="fas fa-clock"></i> 2 hrs/week</span>
-                    <span><i class="fas fa-users"></i> 15 students</span>
-                </div>
+                <h3>Expert Professionals</h3>
+                <p>Our team consists of highly qualified experts with years of experience in their respective fields, ensuring top-quality service.</p>
             </div>
-            <div class="course-card">
-                <div class="course-header">
-                    <div class="course-icon">🔬</div>
-                    <span class="course-price">$219/mo</span>
+            <div class="info-card">
+                <div class="info-header">
+                    <div class="info-icon">★</div>
                 </div>
-                <h3>Science</h3>
-                <p>Explore physics, chemistry, and biology with hands-on experiments and conceptual learning.</p>
-                <div class="course-meta">
-                    <span><i class="fas fa-clock"></i> 3 hrs/week</span>
-                    <span><i class="fas fa-users"></i> 12 students</span>
-                </div>
+                <h3>Client-Focused Approach</h3>
+                <p>We prioritize your needs and work closely with you to achieve the best possible outcomes for your specific situation.</p>
             </div>
-            <div class="course-card">
-                <div class="course-header">
-                    <div class="course-icon">📝</div>
-                    <span class="course-price">$179/mo</span>
+            <div class="info-card">
+                <div class="info-header">
+                    <div class="info-icon">♦</div>
                 </div>
-                <h3>English</h3>
-                <p>Improve grammar, vocabulary, writing skills, and communication for academic and personal growth.</p>
-                <div class="course-meta">
-                    <span><i class="fas fa-clock"></i> 2 hrs/week</span>
-                    <span><i class="fas fa-users"></i> 18 students</span>
-                </div>
-            </div>
-            <div class="course-card">
-                <div class="course-header">
-                    <div class="course-icon">💻</div>
-                    <span class="course-price">$249/mo</span>
-                </div>
-                <h3>Computer Science</h3>
-                <p>Learn programming, web development, and computational thinking for the digital age.</p>
-                <div class="course-meta">
-                    <span><i class="fas fa-clock"></i> 3 hrs/week</span>
-                    <span><i class="fas fa-users"></i> 10 students</span>
-                </div>
+                <h3>Proven Track Record</h3>
+                <p>Since 2021, we have successfully helped hundreds of students and businesses achieve their goals and reach new heights.</p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
         <div class="section-header">
-            <span>Testimonials</span>
-            <h2>What Parents Say</h2>
+            <span>Contact Us</span>
+            <h2>Get In Touch</h2>
         </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p class="testimonial-text">"BrightMinds has transformed my daughter's approach to mathematics. Her grades improved from C to A within just 3 months. The teachers are incredibly patient and supportive!"</p>
-                <div class="testimonial-author">
-                    <div class="author-img">RM</div>
-                    <div class="author-info">
-                        <h4>Rajesh Mehta</h4>
-                        <p>Parent of Priya, Grade 8</p>
-                        <div class="stars">★★★★★</div>
-                    </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-info">
+                    <h4>Address</h4>
+                    <p>Meeta Palace Building<br>Vennikulam, India</p>
                 </div>
             </div>
-            <div class="testimonial-card">
-                <p class="testimonial-text">"The online classes are just as effective as in-person. My son looks forward to every session. The progress tracking feature helps us stay involved in his learning journey."</p>
-                <div class="testimonial-author">
-                    <div class="author-img">SP</div>
-                    <div class="author-info">
-                        <h4>Sneha Patel</h4>
-                        <p>Parent of Arjun, Grade 10</p>
-                        <div class="stars">★★★★★</div>
-                    </div>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-info">
+                    <h4>Phone</h4>
+                    <p>+91 70257 09354</p>
                 </div>
             </div>
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Excellent faculty and well-structured curriculum. My daughter cleared her competitive exams with flying colors thanks to BrightMinds coaching!"</p>
-                <div class="testimonial-author">
-                    <div class="author-img">AK</div>
-                    <div class="author-info">
-                        <h4>Anil Kumar</h4>
-                        <p>Parent of Meera, Grade 12</p>
-                        <div class="stars">★★★★★</div>
-                    </div>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-info">
+                    <h4>Email</h4>
+                    <p>contact@backbenchglobal.com</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta" id="contact">
-        <h2>Ready to Start Learning?</h2>
-        <p>Join BrightMinds Academy today and give your child the gift of quality education.</p>
-        <button class="cta-btn">Book a Free Demo Class</button>
+    <section class="cta">
+        <h2>Ready to Get Started?</h2>
+        <p>Contact BACK BENCH GLOBAL ACADEMY today and take the first step towards your success.</p>
+        <button class="cta-btn">Call +91 70257 09354</button>
     </section>
 
     <!-- Footer -->
@@ -1130,45 +1151,45 @@
                     <div class="logo-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <span>BrightMinds</span>
+                    <span>BACK BENCH</span>
                 </div>
-                <p>Empowering students to achieve academic excellence through personalized learning and expert guidance.</p>
+                <p>Your trusted partner for academic excellence and professional tax consultation since 2021.</p>
                 <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-links">
-                <h4>Courses</h4>
+                <h4>Services</h4>
                 <ul>
-                    <li><a href="#">Mathematics</a></li>
-                    <li><a href="#">Science</a></li>
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">Tax Consultation</a></li>
+                    <li><a href="#">Academic Assistance</a></li>
+                    <li><a href="#">Business Advisory</a></li>
+                    <li><a href="#">Career Counseling</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Education Lane</a></li>
-                    <li><a href="#"><i class="fas fa-phone"></i> +1 234 567 890</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i> info@brightminds.com</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Meeta Palace Building, Vennikulam</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> +91 70257 09354</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> contact@backbenchglobal.com</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 BrightMinds Academy. All rights reserved.</p>
+            <p>© 2026 BACK BENCH GLOBAL ACADEMY. All rights reserved.</p>
         </div>
     </footer>
 
